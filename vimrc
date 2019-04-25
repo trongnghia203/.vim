@@ -9,8 +9,7 @@ set tabstop=4                         " use two spaces for tabs
 " My Theme Choice
 filetype on
 syntax on
-"colorscheme 
-
+colorscheme base16-default-dark
 
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
