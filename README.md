@@ -30,7 +30,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 - Vim Configuration From Scratch in 2016  
 http://marcgg.com/blog/2016/03/01/vimrc-example
 - Vim: So long Pathogen, hello native package loading  
-https://shapeshed.com/vim-packages/#vim-8-brings-native-third-party-package-loading
+https://shapeshed.com/vim-packages/
 - Vim NERDTree Cheat Sheet  
 https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/
 - Tho Vo  
