@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'scrooloose/nerdcommenter'
     Plug 'w0rp/ale'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'ryanoasis/vim-devicons'
 call plug#end() 
 
 set laststatus=2
@@ -34,6 +36,6 @@ let NERDTreeMapActivateNode='<right>'               " hit the right arrow to ope
 let NERDTreeShowHidden=1                            " display hidden files
 nmap <c-n> :NERDTreeToggle<CR>                      " toggle display of the tree with <Leader> + n
 nmap <c-j> :NERDTreeFind<CR>                        " locate the focused file in the tree with <Leader> + j
-autocmd VimEnter * NERDTree                         " always open the tree when booting Vim, but don’t focus it
-autocmd VimEnter * wincmd p                         " always open the tree when booting Vim, but don’t focus it
+"autocmd VimEnter * NERDTree                        " always open the tree when booting Vim, but don’t focus it
+"autocmd VimEnter * wincmd p                        " always open the tree when booting Vim, but don’t focus it
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']   " do not display some useless files in the tree
