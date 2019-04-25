@@ -19,11 +19,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 - https://github.com/Xuyuanp/nerdtree-git-plugin
 - https://github.com/christoomey/vim-tmux-navigator
 - https://github.com/ryanoasis/vim-devicons 
+- https://github.com/scrooloose/nerdcommenter
 
 ### 3. Themes:
 
 - https://github.com/chriskempson/base16-vim
-- https://github.com/scrooloose/nerdcommenter
 
 ## Where did I make my reference?
 
@@ -33,3 +33,5 @@ http://marcgg.com/blog/2016/03/01/vimrc-example
 https://shapeshed.com/vim-packages/#vim-8-brings-native-third-party-package-loading
 - Vim NERDTree Cheat Sheet  
 https://www.cheatography.com/stepk/cheat-sheets/vim-nerdtree/
+- Tho Vo  
+https://github.com/thovt93/dotfiles
