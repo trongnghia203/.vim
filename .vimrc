@@ -1,41 +1,11 @@
-" whitespace
-set expandtab                         " use tabs instead of spaces
-set nojoinspaces                      " use one space, not two, after punctuation
-set shiftround                        " shift to next tabstop
-set shiftwidth=4                      " amount of space used for indentation
-set softtabstop=4                     " appearance of tabs
-set tabstop=4                         " use two spaces for tabs
+set runtimepath+=~/.vim_runtime
 
-" My Theme Choice
-filetype on
-syntax on
-"colorscheme 
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
 
-
-call plug#begin('~/.vim/plugged')
-    Plug 'scrooloose/nerdtree'
-    Plug 'itchyny/lightline.vim'    
-    Plug 'chriskempson/base16-vim'  
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'scrooloose/nerdcommenter'
-    Plug 'w0rp/ale'
-    Plug 'christoomey/vim-tmux-navigator'
-    Plug 'ryanoasis/vim-devicons'
-call plug#end() 
-
-set laststatus=2
-if !has('gui_running')
-  set t_Co=256
-endif
-set noshowmode
-
-filetype plugin on
-
-" map <C-n> :NERDTreeToggle<CR>
-let NERDTreeMapActivateNode='<right>'               " hit the right arrow to open a node
-let NERDTreeShowHidden=1                            " display hidden files
-nmap <c-n> :NERDTreeToggle<CR>                      " toggle display of the tree with <Leader> + n
-nmap <c-j> :NERDTreeFind<CR>                        " locate the focused file in the tree with <Leader> + j
-"autocmd VimEnter * NERDTree                        " always open the tree when booting Vim, but don’t focus it
-"autocmd VimEnter * wincmd p                        " always open the tree when booting Vim, but don’t focus it
-let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']   " do not display some useless files in the tree
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry

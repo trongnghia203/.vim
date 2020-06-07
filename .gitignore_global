@@ -1,0 +1,19 @@
+# suppose to add global git ignore
+# cd ~/
+# rm .gitignore_global
+# ln -s ~/gdc-prj/gdc-private-repos/.gitignore_global .gitignore_global
+# git config --global core.excludesfile ~/.gitignore_global
+
+*~
+.DS_Store
+.settings/
+.project
+add-snowflake/bin/main
+coding-test/bin
+builder
+builder.py
+src/build/
+src/dist/
+src/gdc_opsutils.egg-info/
+.classpath
+.factorypath
